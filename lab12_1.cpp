@@ -3,6 +3,7 @@
 using namespace std;
 
 void stat(const double[],int,double []);
+double sqrt();
 
 int main()
 {
@@ -18,3 +19,19 @@ int main()
 }
 
 //Write definition of stat() here 
+void stat(const double a[],int n,double b[]){
+    double t=0;
+    double u=0;
+    for(int i= 0; i<n;i++){
+        t = t + a[i];
+    }
+    b[0] = t/n;
+    for(int i=0; i<n ;i++){
+        u = u + (a[i]-b[0])*(a[i]-b[0]);
+    }
+    b[1] = sqrt(1*u/n);
+    for(int i; i<n ;i++){
+        if(a[i]>b[2]) b[2]=a[i];
+        if(a[i]<b[3]) b[3]=a[i];
+    }
+}
