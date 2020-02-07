@@ -27,7 +27,7 @@ int main()
 void updateImage(bool im[][M],int S,int X,int Y){
     for(int i=0;i <= N-1;i++ ){
         for(int j=0;j <= M-1;j++){
-            if(sqrt((i-Y)*(i-Y)+(j-X)*(j-X)) <= S-1){
+            if(sqrt((i-X)*(i-X)+(j-Y)*(j-Y)) <= S-1){
                 im[i][j] = 1;
             }      
         }
