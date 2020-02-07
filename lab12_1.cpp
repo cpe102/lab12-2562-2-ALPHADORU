@@ -3,6 +3,7 @@
 using namespace std;
 
 void stat(const double[],int,double []);
+
 double sqrt();
 
 int main()

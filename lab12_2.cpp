@@ -7,7 +7,6 @@ const int N = 30;
 const int M = 70;
 
 double sqrt();
-
 void updateImage(bool [][M],int,int,int);
 void showImage(const bool [][M]);
 
