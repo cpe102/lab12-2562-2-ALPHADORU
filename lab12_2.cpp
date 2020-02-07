@@ -8,7 +8,6 @@ const int M = 70;
 
 double sqrt();
 void updateImage(bool [][M],int,int,int);
-
 void showImage(const bool [][M]);
 
 int main()
